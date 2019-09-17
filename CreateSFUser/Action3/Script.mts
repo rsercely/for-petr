@@ -1,0 +1,4 @@
+﻿Browser("Salesforce - Essentials").Page("Salesforce - Essentials").Link("Setup").Click @@ hightlight id_;_Browser("Salesforce - Essentials").Page("Salesforce - Essentials").Link("Setup")_;_script infofile_;_ZIP::ssf1.xml_;_
+OptionalStep.Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").WebButton("No Thanks").Click @@ hightlight id_;_Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").WebButton("No Thanks")_;_script infofile_;_ZIP::ssf2.xml_;_
+Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").Link("XClose").Click @@ hightlight id_;_Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").Link("XClose")_;_script infofile_;_ZIP::ssf3.xml_;_
+Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").Image("All Tabs").Click @@ hightlight id_;_Browser("Salesforce - Essentials").Page("Home Page ~ Salesforce").Image("All Tabs")_;_script infofile_;_ZIP::ssf4.xml_;_
