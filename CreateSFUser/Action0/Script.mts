@@ -1,3 +1,3 @@
-﻿RunAction "CreateUser", oneIteration
-RunAction "ConfirmInYopmail", oneIteration
-RunAction "ConfigureUser", oneIteration
+﻿RunAction "createAccount", oneIteration
+RunAction "yopmailAck", oneIteration
+RunAction "addData", oneIteration
