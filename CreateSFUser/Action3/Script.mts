@@ -21,17 +21,17 @@ Browser("All Tabs ~ Salesforce").Page("Accounts: Home ~ Salesforce").WebButton("
 'Browser("Salesforce - Developer").Page("Accounts ~ Salesforce").WebButton("New Account").Click @@ hightlight id_;_Browser("Salesforce - Developer").Page("Accounts ~ Salesforce").WebButton("New Account")_;_script infofile_;_ZIP::ssf18.xml_;_
 'Browser("Salesforce - Developer").Page("Accounts ~ Salesforce").WebList("fcf").Submit @@ hightlight id_;_Browser("Salesforce - Developer").Page("Accounts ~ Salesforce").WebList("fcf")_;_script infofile_;_ZIP::ssf19.xml_;_
 
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebEdit("acc2").Set "Amazon"
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebButton("Save & New").Click
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebEdit("acc2").Set "Delta"
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebButton("Save & New").Click
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebEdit("acc2").Set "Hilton"
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebButton("Save & New").Click
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebEdit("acc2").Set "Facebook"
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebButton("Save & New").Click
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebEdit("acc2").Set "Google"
+Browser("Account Edit: New Account").Page("Account Edit: New Account").WebButton("Save & New").Click
 
-Browser("Salesforce - Developer").Page("Salesforce - Developer").WebEdit("acc2").Set "Amazon"
-Browser("Salesforce - Developer").Page("Account Edit: New Account").WebButton("Save & New").Click
-Browser("Salesforce - Developer").Page("Salesforce - Developer").WebEdit("acc2").Set "Delta"
-Browser("Salesforce - Developer").Page("Account Edit: New Account").WebButton("Save & New").Click
-Browser("Salesforce - Developer").Page("Salesforce - Developer").WebEdit("acc2").Set "Hilton"
-Browser("Salesforce - Developer").Page("Account Edit: New Account").WebButton("Save & New").Click
-Browser("Salesforce - Developer").Page("Salesforce - Developer").WebEdit("acc2").Set "Facebook"
-Browser("Salesforce - Developer").Page("Account Edit: New Account").WebButton("Save & New").Click
-Browser("Salesforce - Developer").Page("Salesforce - Developer").WebEdit("acc2").Set "Google"
-Browser("Salesforce - Developer").Page("Account Edit: New Account").WebButton("Save & New").Click
 
 
 Browser("Salesforce - Developer").Page("Account: Google ~ Salesforce").Link("Contracts").Click @@ hightlight id_;_Browser("Salesforce - Developer").Page("Account: Google ~ Salesforce").Link("Contracts")_;_script infofile_;_ZIP::ssf30.xml_;_
@@ -60,5 +60,4 @@ Browser("Salesforce - Developer").Page("Contract Edit: New Contract_5").WebEdit(
 Browser("Salesforce - Developer").Page("Contract Edit: New Contract_5").WebEdit("ctrc40").Set "3" @@ hightlight id_;_Browser("Salesforce - Developer").Page("Contract Edit: New Contract 5").WebEdit("ctrc40")_;_script infofile_;_ZIP::ssf53.xml_;_
 Browser("Salesforce - Developer").Page("Contract Edit: New Contract_5").WebButton("Save").Click @@ hightlight id_;_Browser("Salesforce - Developer").Page("Contract Edit: New Contract 5").WebButton("Save")_;_script infofile_;_ZIP::ssf54.xml_;_
 Browser("Salesforce - Developer").Page("Contract: 00000103 ~ Salesforc").Sync @@ hightlight id_;_Browser("Salesforce - Developer").Page("Contract: 00000103 ~ Salesforc")_;_script infofile_;_ZIP::ssf55.xml_;_
-Browser("Salesforce - Developer").CloseAllTabs @@ hightlight id_;_5310200_;_script infofile_;_ZIP::ssf56.xml_;_
-Browser("Salesforce - Developer").Dialog("Internet Explorer").WinButton("Close all tabs").Click @@ hightlight id_;_2819408_;_script infofile_;_ZIP::ssf57.xml_;_
+
