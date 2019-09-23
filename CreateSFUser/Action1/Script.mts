@@ -1,7 +1,8 @@
-﻿' this test will probably work best if all browsers are closed before running.
-' It does use the run/record settings to open a browser - but the url is about:blank, hence the navigation step below
+﻿' ensure a clean environment every iteration
+SystemUtil.CloseProcessByName "iexplore.exe"
+webutil.LaunchBrowser "https://developer.salesforce.com"
 
-Browser("Salesforce Developers").Navigate "https://developer.salesforce.com/"
+
 Browser("Salesforce Developers").Page("Salesforce Developers").WebButton("Sign Up ›").Click @@ hightlight id_;_Browser("Salesforce Developers").Page("Salesforce Developers").WebButton("Sign Up ›")_;_script infofile_;_ZIP::ssf1.xml_;_
 Browser("Salesforce Developers").Page("Salesforce Developers_2").WebEdit("user[first_name]").Set DataTable("fName", dtGlobalSheet) @@ hightlight id_;_Browser("Salesforce Developers").Page("Salesforce Developers 2").WebEdit("user[first name]")_;_script infofile_;_ZIP::ssf2.xml_;_
 Browser("Salesforce Developers").Page("Salesforce Developers_2").WebEdit("user[last_name]").Set DataTable("lName", dtGlobalSheet) @@ hightlight id_;_Browser("Salesforce Developers").Page("Salesforce Developers 2").WebEdit("user[last name]")_;_script infofile_;_ZIP::ssf3.xml_;_
@@ -17,3 +18,11 @@ Browser("Salesforce Developers").Page("Salesforce Developers_2").WebButton("Sign
 Browser("Salesforce Developers").Page("Salesforce Developers_2").WebElement("By registering, you confirm").Click @@ hightlight id_;_Browser("Salesforce Developers").Page("Salesforce Developers 2").WebElement("By registering, you confirm")_;_script infofile_;_ZIP::ssf13.xml_;_
 Browser("Salesforce Developers").Page("Salesforce Developers_2").WebCheckBox("eula").Set "ON" @@ hightlight id_;_Browser("Salesforce Developers").Page("Salesforce Developers 2").WebCheckBox("eula")_;_script infofile_;_ZIP::ssf14.xml_;_
 Browser("Salesforce Developers").Page("Salesforce Developers_2").WebButton("Sign me up >").Click @@ script infofile_;_ZIP::ssf15.xml_;_
+
+if Browser("Salesforce Developers").Page("Salesforce Developers_2").WebElement("You are already using").Exist(10) then
+	reporter.ReportEvent micFail, "Bad email", ">" & DataTable("newEmail", dtGlobalSheet) & "< is already registered at SalesForce"	
+	exittest
+End If
+
+
+
