@@ -1,13 +1,8 @@
-﻿If RunningChrome Then
-	Browser("Change Your Password |").Page("Home | Salesforce").WebButton("Close this window").Click @@ script infofile_;_ZIP::ssf74.xml_;_
+﻿if parameter.Item("RunningChrome") then
+'	Browser("Change Your Password |").Page("Home | Salesforce").WebButton("Close this window").Click @@ script infofile_;_ZIP::ssf74.xml_;_
 	Browser("Change Your Password |").Page("Home | Salesforce").WebButton("View profile").Click @@ script infofile_;_ZIP::ssf75.xml_;_
 	Browser("Change Your Password |").Page("Home | Salesforce").Link("Switch to Salesforce Classic").Click
 End If
-
-' need to close yopmail tab for next iteration. It isn't easy :-)
-'Browser("Change Your Password |").WinObject("WinObject").InsightObject("InsightObject").highlight 
-'Browser("Change Your Password |").WinObject("WinObject").InsightObject("InsightObject").Click
-
 
 Browser("Home Page ~ Salesforce").Page("Home Page ~ Salesforce").Image("All Tabs").Click @@ hightlight id_;_Browser("Home Page ~ Salesforce").Page("Home Page ~ Salesforce").Image("All Tabs")_;_script infofile_;_ZIP::ssf1.xml_;_
 Browser("All Tabs ~ Salesforce").Page("All Tabs ~ Salesforce").WebElement("tsidLabel").Click @@ hightlight id_;_Browser("All Tabs ~ Salesforce").Page("All Tabs ~ Salesforce").WebElement("tsidLabel")_;_script infofile_;_ZIP::ssf59.xml_;_

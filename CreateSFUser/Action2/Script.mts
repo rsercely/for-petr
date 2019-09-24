@@ -2,6 +2,7 @@
 
 Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").WebButton("Check Inbox").Check CheckPoint("Check Inbox") @@ script infofile_;_ZIP::ssf25.xml_;_
 Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").WebEdit("login").Set DataTable("newUserName", dtGlobalSheet) @@ hightlight id_;_Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").WebEdit("login")_;_script infofile_;_ZIP::ssf1.xml_;_
+wait 3 ' ran 50 iterations, and one time, the mail had not arrived in time. Hence the wait
 Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").WebButton("Check Inbox").Click
 Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").Frame("ifinbox").Link("mailFrom_developer@salesforce.com").Click @@ hightlight id_;_Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").Frame("ifinbox").Link("10:45developer@salesforce.comW")_;_script infofile_;_ZIP::ssf15.xml_;_
 Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").Frame("ifmail_3").Link("Verify Account").Click @@ hightlight id_;_Browser("YOPmail - Disposable Email").Page("YOPmail - Disposable Email").Frame("ifmail 3").Link("Verify Account")_;_script infofile_;_ZIP::ssf16.xml_;_
